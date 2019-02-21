@@ -236,23 +236,19 @@ body {
   color: #999999;
   display: inline-block;
 }
-.problem .pro-list li .p-text .red {
-  font-size: 24px;
-  background: #f12c3e;
+.problem .pro-list li .p-text .active {
   color: #fff;
   font-weight: bold;
+  font-size: 24px;
+}
+.problem .pro-list li .p-text .red {
+  background: #f12c3e;
 }
 .problem .pro-list li .p-text .green {
   background: #77d018;
-  color: #fff;
-  font-weight: bold;
-  font-size: 24px;
 }
 .problem .pro-list li .p-text .yellow {
   background: #ffa200;
-  color: #fff;
-  font-weight: bold;
-  font-size: 24px;
 }
 .problem .pro-btn {
   display: block;
@@ -987,23 +983,19 @@ body {
     color: #999999;
     display: inline-block;
   }
-  .problem .pro-list li .p-text .red {
-    font-size: .16rem;
-    background: #f12c3e;
+  .problem .pro-list li .p-text .active {
     color: #fff;
     font-weight: bold;
+    font-size: .16rem;
+  }
+  .problem .pro-list li .p-text .red {
+    background: #f12c3e;
   }
   .problem .pro-list li .p-text .green {
     background: #77d018;
-    color: #fff;
-    font-weight: bold;
-    font-size: .16rem;
   }
   .problem .pro-list li .p-text .yellow {
     background: #ffa200;
-    color: #fff;
-    font-weight: bold;
-    font-size: .16rem;
   }
   .problem .pro-btn {
     display: block;
