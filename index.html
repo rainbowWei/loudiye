@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>综合页面</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/index.js"></script>
+    <script type="text/javascript">
+        //移动端   设计图纸是750px
+        $(function(){ 
+                document.querySelector("html").style.opacity = 1;
+                $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
+                $(window).resize(function(){
+                    $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
+                    document.getElementsByTagName("html")[0].style.opacity = 1;
+    
+                });
+           
+        });
+    </script>
+</head>
+<body>
+   
+    <div class="header-b"> 
+        <!-- 头部部分 -->
+        <div class="header">
+            <div class="content2 clearfix">
+                <div class="logo fl"></div>
+                <div class="contact fr">
+                    <p class="p1">全国咨询热线</p>
+                    <p class="p2">010-52668752</p>
+                </div>
+            </div>
+        </div>
+        <!-- banner部分 -->
+        <div class="banner"></div>
+    </div>
+    <!--存在问题部分 -->
+    <div class="problem">
+        <div class="content3 content2">
+            <div class="pro-h">您是否还在为孩子的以下问题愁眉苦展</div>
+            <ul class="pro-list">
+                <li>
+                    <div class="img">
+                        <img src="/images/problem.png" alt="">
+                    </div>
+                    <div class="p-text">
+                        <p class="red">刻板行为与兴趣狭窄</p>
+                        <p>不会察言观色</p>
+                        <p>情绪控制力差</p>
+                        <p>不会跟人互动</p>
+                        <p>对周围不感兴趣</p>
+                        <p>眼神不对视</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="/images/problem2.png" alt="">
+                    </div>
+                    <div class="p-text">
+                        <p>缺乏动机</p>
+                        <p>上学困难重重</p>
+                        <p> 交流能力差</p>
+                        <p>不遵守集体规则</p>
+                        <p>逻辑思维能力差</p>
+                        <p class="green">社交技能差</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="/images/problem3.png" alt="">
+                    </div>
+                    <div class="p-text">
+                        <p>不听指令多动</p>
+                        <p>注意力分散不集中</p>
+                        <p class="yellow">语言能力差</p>
+                        <p>自言自语</p>
+                        <p>行为怪异</p>
+                    </div>
+                </li>
+            </ul>
+            <a href="javascript:"class="pro-btn">点击咨询 </a>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!-- MUST家庭疗法的优势 -->
+    <div class="advantage">
+        <div class="content">
+            <div class="adv-h">MUST家庭疗法的优势</div>
+            <ul class="adv-list clearfix">
+                <li class="adv-li">
+                    <div class="adv-txt">
+                        比机构节省<br/><span>90%</span>时间费用
+                    </div>
+                    <div class="adv-img"></div>
+                </li>
+                <li class="adv-li2">
+                    <div class="adv-txt">
+                        见效快<br/><span>3</span>个月内出自主语言
+                    </div>
+                    <div class="adv-img"></div>
+                </li>
+                <li class="adv-li3">
+                    <div class="adv-txt">
+                        效果快<br/><span>1</span>年正常上学
+                    </div>
+                    <div class="adv-img"></div>
+                </li>
+            </ul>
+            <ul class="adv-list2">
+                <li>
+                    <div class="a1"></div>
+                    <p>星希望<span>15年</span>耕耘</p>
+                </li>
+                <li>
+                    <div class="a2"></div>
+                    <p>干预<span>5万</span>多个家庭</p>
+                </li>
+                <li>
+                    <div class="a3"></div>
+                    <p>合作单位<span>100余</span>家</p>
+                </li>
+                <li>
+                    <div class="a4"></div>
+                    <p>惠及超<span>18万</span>人</p>
+                </li>
+            </ul>
+            <div class="adv-footer">实践验证，运用MUST行为引导技术的孩子，在语言、社交、行为、认知以及情绪等方面
+                    都有了大幅改善，进步率达到<span>98%</span>以上，进步速度惊人。
+            </div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!-- MUST孤独症综合疗法家庭干预课程 -->
+    <div class="course">
+        <div class="content">
+            <div class="course-h">MUST孤独症综合疗法家庭干预课程</div>
+            <div class="tab">
+                <ul class="tab-menu clearfix">
+                    <li class="show isrequired"><span>MUST原理</span><i></i></li>
+                    <li><span>MUST技术</span></li>
+                    <li><span>MUST操作</span></li>
+                    <li><span>MUST教具课</span></li>
+                    <li><span>MUST情景课</span></li>
+                </ul>
+                <div class="tab-box">
+                    <div>
+                        <ul>   
+                            <li>1、理解能力差怎么办？</li> 
+                            <li>2、训练多年后，为什么仍然很严重？</li>
+                            <li>3、康复训练的必要性</li>
+                            <li>4、如何判断孩子到底是高功能还是底功能？</li>
+                            <li>5、机构训练与家庭训练的对比</li>
+                            <li>6、如何系统整体地规划孩子的康复训练</li>
+                            <li>7、提升孩子眼神对视时间</li>
+                            <li>8、孩子总自言自语要怎么办？</li>
+                            <li>9、给孩子制定训练目标时需要注意哪些方面？</li>
+                            <li>10、孩子状况越来越糟糕，怎么办？</li>
+                            <li>11、孩子脾气特别大，怎么训练？</li>
+                            <li>12、孩子哭闹不停怎么办？</li>
+                            <li>13、与孩子对话没反应怎么办？</li>
+                            <li>14、孩子要训练多久才见效？</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>     
+                            <li>1、如何训练孩子见人问好？</li> 
+                            <li>2、如何利用图片促进孩子语言交流？</li>
+                            <li>3、孤独症的孩子能学舞蹈吗？</li>
+                            <li>4、只会防说不会主动表达要怎么办？</li>
+                            <li>5、如何让孩子脱离辅助？</li>
+                            <li>6、如何让孩子脱离辅助？</li>
+                            <li>7、怎么能让孩子听我的话？</li>
+                            <li>8、孩子康复到什么程度就不用强化了？</li>
+                            <li>9、为什么孩子在机构的技能在家里就不会了？</li>
+                            <li>10、怎样让孩子学会社交规则？</li>
+                            <li>11、哪种训练方法孩子训练效果最好？</li>
+                        </ul> 
+                    </div>
+                    <div>       
+                        <ul>
+                            <li> 1、怎样才能找到对孩子有效的强化物？</li> 
+                            <li> 2、解决孩子课堂中注意力问题</li>
+                            <li> 3、如何让孩子记住已通过的项目？</li>
+                            <li> 4、怎样给孩子训练效果最好？</li>
+                            <li> 5、孩子不愿意坐椅子训练怎么办？</li>
+                            <li> 6、孤独症孩子的坐姿训练该注意什么？</li>
+                            <li> 7、孩子总喜欢玩手机怎么办？</li>
+                            <li> 8、孩子的脚总是乱晃怎么办？</li>
+                            <li> 9、如何训练孩子的眼神对视？</li>
+                            <li> 10、呼名应答该如何训练？</li>
+                            <li> 11、如何让孩子学会轮流？</li>
+                            <li> 12、学习社会交往的基础是什么？</li>
+                            <li> 13、孩子没有动机怎么办？</li>
+                            <li> 14、如何教会孩子分享？</li>
+                            <li> 15、怎样让孩子听话？</li>
+                            <li> 16、如何才能教会孩子说话？</li>
+                            <li> 17、孩子总是喜欢打人怎么办？</li>
+                        </ul>   
+                    </div>
+                    <div>    
+                        <ul>
+                            <li>1、如何让孩子乖乖坐椅子</li> 
+                            <li>2、教孩子呼名应答</li>
+                            <li>3、教孩子模仿精细动作---比“耶”</li>
+                            <li>4、如何教孩子学会单脚站</li>
+                            <li>5、如何教孩子听指令：“拍手”</li>
+                            <li>6、如何教孩子端杯子喝水</li>
+                            <li>7、教孩子跟人沟通时加称呼</li>
+                            <li>8、教孩子陈述某类别物品名字</li>
+                            <li>9、如何让孩子主动做作业</li>
+                            <li>10、如何教孩子吸引他人注意</li>
+                            <li>11、训练孩子完成任务不分心</li>
+                            <li>12、教孩子主动收拾物品</li>
+                        </ul>
+                    </div>
+                    <div>    
+                        <ul>
+                            <li>1、给我苹果</li> 
+                            <li>2、给我圆圆的红红的水果</li>
+                            <li>3、模仿洗苹果、吃苹果</li>
+                            <li>4、命名”阿姨在吃苹果”</li>
+                            <li>5、苹果是用来干什么的?</li>
+                            <li>6、假装你拿到了一个苹果</li>
+                            <li>7、想吃苹果得到红姜是什么心情？</li>
+                            <li>8、点头给，摇头不给</li>
+                            <li>9、数一数有几个？</li>
+                            <li>10、孩子们，现在是苹果时间</li>
+                            <li>11、削苹果</li>
+                            <li>12、女孩子假装吃苹果</li>
+                        </ul>
+                       
+                    </div>
+                    
+                </div>
+                <a href="https://tb.53kf.com/code/client/10182209/1" target="_blank" class="course-btn">点击咨询</a>
+                <p class="course-bg"></p>   
+            </div>
+        </div>
+    </div>
+    <!-- 专家团队 -->
+    <div class="expert">
+        <div class="expert-h">
+            <h3>专家团队</h3>
+            <p>星希望创始人杜佳楣与其专家团队，在近30年行为引导实践教学和15年一线康复训练教学、<br/>
+                5000多个个案干预等基础上，研发出MUST行为引导技术。该技术具备独立知识产权，<br/>
+                并具有配套的独特教具，系统全面地提出孤独症孩子的训练体系。</p>
+        </div>
+        <div class="content">
+            
+            <ul class="expert-list clearfix">
+                    <li>
+                        <div class="img">
+                            <img src="/images/1.png" alt="">  
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                        杜佳楣
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="/images/2.png" alt="">   
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            Mickey Keenan
+                        </p>
+                    </li>
+                    <li class="show-f">
+                        <div class="img">
+                            <img src="/images/3.png" alt="">   
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            Karola Dillenburger
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="/images/4.png" alt="">  
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            郭延庆
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="/images/5.png" alt="">    
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            Helen McCabe
+                        </p>
+                    </li>
+                    <li class="ml">
+                        <div class="img">
+                            <img src="/images/6.png" alt="">    
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            刘婧
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="/images/7.png" alt="">   
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            韩慧雯 
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="/images/8.png" alt="">    
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            贾美香 
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="/images/9.png" alt="">    
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            甄岳来
+                        </p>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="/images/10.png" alt="">    
+                        </div>
+                        <div class="mask2"></div>
+                        <p class="title">
+                            李雪 
+                        </p>
+                    </li>
+            </ul>
+            <div class="expert-c">
+                <div>
+                    <h3>杜佳楣</h3>
+                    <p>MUST行为引导技术创始人</p>
+                    <p>中国残疾人康复协会孤独症专业委员副主任委员</p>
+                    <p>被评为“首都十大教育新闻人物”</p>
+                    <p>被评为北京市“三八红旗手”</p>
+                    <p>获得“首都精神文明建设奖</p>
+                </div>
+                <div>
+                    <h3> Mickey Keenan</h3>
+                    <p> 北爱尔兰阿尔斯特大学</p>
+                    <p>心理学院教授</p>
+                    <p>曾获2008年度行为分析</p>
+                    <p>发展协会公共服务奖</p>
+                </div>
+                <div class="show-c">
+                    <h3> Karola Dillenburger</h3>
+                    <p> 博士生导师</p>
+                    <p>英国贝尔法斯特女王大学教育</p>
+                    <p>学院行为分析中心的主任</p>
+                    <p>关注基于实证研究的弱势儿童早期干预，尤其是自闭症谱系障碍儿童多次受邀参加美国、印度、欧洲和澳大利亚等国际会议</p>
+                </div>
+                <div>
+                    <h3> 郭延庆</h3>
+                    <p>北京医科大学 副教授 </p>
+                    <p>副院（所）长</p>
+                    <p>曾任国际应用行为分析协会</p>
+                    <p>中国分会主席</p>
+                </div>
+                <div>
+                    <h3> Helen McCabe</h3>
+                    <p>美国印第安纳大学的</p>
+                    <p>特殊教育/国际教育博士</p>
+                    <p>美国五项目：国际孤独症和其他障碍支持机构，创始人之一</p>
+                    <p> Hussman孤独症研究所的研究员</p>
+                </div>
+                <div>
+                    <h3>刘靖</h3>
+                    <p>硕士研究生导师</p>
+                    <p>中华医学会精神病学分会儿童青少年精神病学组秘书长 </p>
+                    <p>亚洲儿童青少年精神医学及相关学科学会副主席</p>
+                    <p>中国残疾人联合会孤独症委员会委员</p>   
+                </div>
+                <div>
+                    <h3>韩慧雯</h3>
+                    <p>台中市语言治疗师公会监事</p>
+                    <p>台中市教育局巡回辅导语言治疗师</p>
+                    <p>台中市融合教育支持协会顾问</p> 
+                </div>
+                <div>
+                    <h3>贾美香</h3>
+                    <p>北京大学第六医院主任医师</p>
+                    <p>中国残疾人联合会孤独症委员会副主任</p>
+                </div>
+                <div>
+                    <h3>甄岳来</h3>
+                    <p> 北京信息科技大学教师</p>
+                    <p>孤独症家长，长期从事孤独症教育研究</p>
+                </div>
+                <div>
+                    <h3>李雪</h3>
+                    <p> 博士，北京大学第六医院儿科副主任</p>
+                    <p>中国残疾人康复协会应用行为分析专业委员会副主任委员、副秘书长</p>
+                    <p>北京市孤独症儿童康复协会理事</p>
+                </div>
+            </div>
+            <a href="javascript:" class="expert-btn">了解更多</a>
+            <div class="circle"></div> 
+        </div>       
+    </div>
+    <!-- 专业服务 -->
+    <div class="serve">
+        <div class="content">
+        <h3>专业服务</h3>
+            <div class="serve-h">MUST引导行为，行为改变命运</div>
+            <div class="serve-h2">品牌贴心服务，星希望始于陪伴</div>
+            <ul class="serve-list">
+                <li class="clearfix">
+                   <div class="img fl">
+                       <img src="/images/serve.png" alt="">
+                   </div> 
+                   <div class="text fr">
+                        <h4>小白的佳音</h4>
+                        <p>MUST系列课程，让家庭康复训练学习变得更简单</p>
+                   </div>
+                </li>
+                <li class="clearfix">
+                    <div class="img fl">
+                        <img src="/images/serve2.png" alt="">
+                    </div> 
+                    <div class="text fr">
+                        <h4>1V1班主任</h4>
+                        <p>班主任督促家长学习，协助家长解决训练中遇到的问题</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="img fl">
+                        <img src="/images/serve3.png" alt="">
+                    </div> 
+                    <div class="text fr">
+                        <h4>专业答疑</h4>
+                        <p>专业老师，24小时在线辅导</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="img fl">
+                        <img src="/images/serve4.png" alt="">
+                    </div> 
+                    <div class="text fr">
+                        <h4>直播课程学习</h4>
+                        <p>课程有效期内，享有免费学习星希望推出的直播课程</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="img fl">
+                        <img src="/images/serve5.png" alt="">
+                    </div> 
+                    <div class="text fr">
+                        <h4>专业效果测评</h4>
+                        <p>购买课程进行学习，在有效期内进行在线效果评测两次</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="img fl">
+                        <img src="/images/serve6.png" alt="">
+                    </div> 
+                    <div class="text fr">
+                        <h4>家庭训练教具</h4>
+                        <p>让家长进行家庭康复训练时，孩子吸收效果更好</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="img fl">
+                        <img src="/images/serve7.png" alt="">
+                    </div> 
+                    <div class="text fr">
+                        <h4>私人定制学习计划</h4>
+                        <p>根据家长自身的基本情况，制定学习计划，让学习简单易懂。</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="img fl">
+                        <img src="/images/serve8.png" alt="">
+                    </div> 
+                    <div class="text fr">
+                        <h4>训练记录表</h4>
+                        <p>每日给孩子进行项目训练锁定，并做好项目训练记录表，以便每时每刻清楚<br/>
+                                孩子的进步情况。</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="circle"></div> 
+        </div>
+    </div>
+    <!-- 所获荣誉 -->
+    <div class="honor">
+        <div class="content">
+            <div class="honor-h">所获荣誉</div>
+            <ul class="honor-list">
+                <li class="h1">
+                    <img src="/images/honor.png" alt="">
+                </li>
+                <li class="h2">
+                    <img src="/images/honor2.png" alt="">
+                </li>
+                <li class="h3">
+                    <img src="/images/honor3.png" alt="">
+                </li>
+                <li class="h4">
+                    <img src="/images/honor4.png" alt="">
+                </li>
+                <li class="h5">
+                    <img src="/images/honor5.png" alt="">
+                </li>
+                <li class="h6">
+                    <img src="/images/honor6.png" alt="">
+                </li>
+                <li class="h7">
+                    <img src="/images/honor7.png" alt="">
+                </li>
+                <li class="h8">
+                    <img src="/images/honor8.png" alt="">
+                </li>
+                <li class="h9">
+                    <img src="/images/honor9.png" alt="">
+                </li>
+                <li class="h10">
+                    <img src="/images/honor-bg.png" alt="">
+                </li>
+                <li class="h11">北京市残疾人联合会</li>
+            </ul>
+        </div>
+        <div class="honor-footer">
+            <div class="content">
+                <p>
+                    2013年，星希望在北京市残联的定点评估中获得第一名， <br/>
+                    被北京市残联认定为定点机构。家长可以在线申请残联补贴。
+                </p>
+                <a href="javascript:" class="honor-btn">详情咨询</a>
+            </div>
+           
+        </div>
+        <div class="circle"></div> 
+    </div>
+    <!-- 表单 -->
+    <div class="form">
+        <div class="content">
+           <div class="form-c clearfix">
+               <div class="f-left fl"></div>
+               <div class="f-right fr">
+                   <h3>免费领取家庭干预试听课</h3>
+                   <div class="f-c">
+                       <div>
+                            <span>孩子年龄：</span><input type="text" placeholder="请输入您的孩子年龄">
+                       </div>
+                       <div>
+                            <span>手机号码：</span><input type="text" placeholder="请输入您的手机号码">
+                       </div>
+                       <div>
+                            <span>所在城市：</span><input type="text" placeholder="请输入您的所在城市">
+                       </div>
+                       <a href="javascript:" class="form-btn">提交</a>
+                   </div>
+               </div>
+           </div> 
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        Copyright 2019 @ 北京星希望孤独症康复中心版权所有 京ICP备12007218号-1
+    </div>
+
+    <!-- 返回顶部 -->
+    <div id="back"></div>
+
+</body>
+</html>
