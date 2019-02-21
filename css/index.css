@@ -142,6 +142,7 @@ div#mobile_icon_div {
 }
 body {
   background: #fff;
+  font-size: 16px;
 }
 .header-b {
   width: 100%;
@@ -179,7 +180,7 @@ body {
   width: 100%;
   background: #fff;
   position: relative;
-  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 .problem .content3 {
   height: 892px;
@@ -243,12 +244,15 @@ body {
 }
 .problem .pro-list li .p-text .red {
   background: #f12c3e;
+  border: solid 1px #f12c3e;
 }
 .problem .pro-list li .p-text .green {
   background: #77d018;
+  border: solid 1px #77d018;
 }
 .problem .pro-list li .p-text .yellow {
   background: #ffa200;
+  border: solid 1px #ffa200;
 }
 .problem .pro-btn {
   display: block;
@@ -281,7 +285,7 @@ body {
   padding-top: 50px;
   background-color: #eff6f8;
   position: relative;
-  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 .advantage .adv-h {
   text-align: center;
@@ -317,8 +321,10 @@ body {
 .advantage .adv-list .adv-li .adv-img {
   width: 134px;
   height: 280px;
-  background: url(../images/adv.png);
-  background-size: 100% 100%;
+}
+.advantage .adv-list .adv-li .adv-img img {
+  width: 100%;
+  height: 100%;
 }
 .advantage .adv-list .adv-li2 {
   width: 254px;
@@ -326,9 +332,11 @@ body {
 .advantage .adv-list .adv-li2 .adv-img {
   width: 218px;
   height: 218px;
-  background: url(../images/adv2.png);
-  background-size: 100% 100%;
   margin-top: 58px;
+}
+.advantage .adv-list .adv-li2 .adv-img img {
+  width: 100%;
+  height: 100%;
 }
 .advantage .adv-list .adv-li3 {
   width: 208px;
@@ -336,9 +344,11 @@ body {
 .advantage .adv-list .adv-li3 .adv-img {
   width: 209px;
   height: 264px;
-  background: url(../images/adv3.png);
-  background-size: 100% 100%;
   margin-top: 44px;
+}
+.advantage .adv-list .adv-li3 .adv-img img {
+  width: 100%;
+  height: 100%;
 }
 .advantage .adv-list2 {
   margin-top: 50px;
@@ -390,18 +400,22 @@ body {
   color: #01b1e6;
 }
 .advantage .adv-footer {
-  width: 858px;
   height: 70px;
   font-size: 22px;
   line-height: 33px;
   color: #999999;
   text-align: center;
 }
+.advantage .adv-footer span {
+  font-size: 28px;
+  color: #01b1e6;
+}
 .course {
   width: 100%;
   background: #fff;
-  padding-top: 50px;
-  margin-bottom: 40px;
+  padding: 50px 0 40px;
+  position: relative;
+  border-bottom: 1px solid #e1e1e1;
 }
 .course .course-h {
   font-size: 36px;
@@ -502,7 +516,7 @@ body {
   width: 100%;
   height: 1500px;
   position: relative;
-  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 .expert .expert-h {
   width: 100%;
@@ -615,7 +629,7 @@ body {
   padding-top: 37px;
   background-color: #e9edf1;
   position: relative;
-  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 .serve h3 {
   font-size: 36px;
@@ -677,7 +691,7 @@ body {
   height: 1042px;
   padding-top: 40px;
   position: relative;
-  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 .honor .honor-h {
   font-size: 36px;
@@ -885,8 +899,10 @@ body {
 }
 @media screen and (max-width: 1024px) {
   html {
-    font-size: .1rem;
     opacity: 0;
+  }
+  body {
+    font-size: .1rem;
   }
   .content {
     width: 6rem;
@@ -899,8 +915,6 @@ body {
   .header-b {
     width: 100%;
     height: 3.85rem;
-    background: url(../images/banner.png);
-    background-size: 100% 100%;
   }
   .header-b .header {
     width: 100%;
@@ -910,16 +924,14 @@ body {
     width: .74rem;
     height: .36rem;
     margin-top: .06rem;
-    background: url(../images/logo.png);
-    background-size: 100% 100%;
   }
   .header-b .header .contact {
-    width: 1rem;
+    width: 1.2rem;
     margin-top: .12rem;
   }
   .header-b .header .contact .p1 {
     font-size: .1rem;
-    line-height: .14rem;
+    line-height: .16rem;
   }
   .header-b .header .contact .p2 {
     font-size: .12rem;
@@ -930,8 +942,6 @@ body {
   .problem .content3 {
     width: 7.2rem;
     height: 5.25rem;
-    background: #fff;
-    position: absolute;
     top: -0.3rem;
     left: 50%;
     margin-left: -3.6rem;
@@ -939,49 +949,34 @@ body {
   .problem .pro-h {
     font-size: .22rem;
     line-height: .22rem;
-    color: #333333;
-    text-align: center;
     margin-top: .3rem;
   }
   .problem .pro-list {
     width: 6rem;
     margin: .19rem auto 0;
-    height: 3.55rem;
+    height: 3.6rem;
   }
   .problem .pro-list li {
-    float: left;
     margin-left: .11rem;
     width: 1.92rem;
     height: 100%;
-    background-color: #ffffff;
     box-shadow: 0px 0.04rem 0.15rem 0.01rem rgba(14, 62, 77, 0.13);
-  }
-  .problem .pro-list li:first-child {
-    margin-left: 0;
   }
   .problem .pro-list li .img {
     width: 100%;
     height: 1.26rem;
   }
-  .problem .pro-list li .img img {
-    width: 100%;
-    height: 100%;
-  }
   .problem .pro-list li .p-text {
     margin-top: .10rem;
-    text-align: center;
   }
   .problem .pro-list li .p-text p {
     height: .3rem;
     line-height: .3rem;
     padding: 0 .20rem;
-    text-align: center;
     border-radius: .15rem;
-    border: solid 1px #d1d1d1;
+    border: solid .01rem #d1d1d1;
     margin-bottom: .05rem;
     font-size: .14rem;
-    color: #999999;
-    display: inline-block;
   }
   .problem .pro-list li .p-text .active {
     color: #fff;
@@ -990,25 +985,419 @@ body {
   }
   .problem .pro-list li .p-text .red {
     background: #f12c3e;
+    border: solid .01rem #f12c3e;
   }
   .problem .pro-list li .p-text .green {
     background: #77d018;
+    border: solid .01rem #77d018;
   }
   .problem .pro-list li .p-text .yellow {
     background: #ffa200;
+    border: solid .01rem #ffa200;
   }
   .problem .pro-btn {
-    display: block;
     width: 1.92rem;
     height: .35rem;
-    background-color: #f08300;
     font-size: .14rem;
     line-height: .35rem;
-    color: #ffffff;
-    text-align: center;
-    position: absolute;
     bottom: .42rem;
     left: 50%;
-    margin-left: -0.81rem;
+    margin-left: -0.96rem;
+  }
+  .circle {
+    width: .25rem;
+    height: .25rem;
+    bottom: -0.12rem;
+    margin-left: -0.12rem;
+  }
+  .advantage {
+    height: 4.8rem;
+    padding-top: .30rem;
+  }
+  .advantage .adv-h {
+    font-size: .22rem;
+    line-height: .22rem;
+  }
+  .advantage .adv-list {
+    margin-top: .17rem;
+  }
+  .advantage .adv-list li {
+    float: left;
+    margin-left: .8rem;
+  }
+  .advantage .adv-list li .adv-txt {
+    font-size: .16rem;
+    line-height: .16rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: .17rem;
+  }
+  .advantage .adv-list li .adv-txt span {
+    font-size: .34rem;
+    line-height: .40rem;
+    color: #f12c3e;
+  }
+  .advantage .adv-list li:first-child {
+    margin-left: 0;
+  }
+  .advantage .adv-list .adv-li {
+    width: 1.47rem;
+  }
+  .advantage .adv-list .adv-li .adv-img {
+    width: .80rem;
+    height: 1.67rem;
+  }
+  .advantage .adv-list .adv-li2 {
+    width: 1.54rem;
+  }
+  .advantage .adv-list .adv-li2 .adv-img {
+    width: 1.32rem;
+    height: 1.32rem;
+    margin-top: .34rem;
+  }
+  .advantage .adv-list .adv-li3 {
+    width: 1.37rem;
+  }
+  .advantage .adv-list .adv-li3 .adv-img {
+    width: 1.25rem;
+    height: 1.59rem;
+    margin-top: .26rem;
+  }
+  .advantage .adv-list2 {
+    margin-top: .29rem;
+    height: .80rem;
+  }
+  .advantage .adv-list2 li {
+    float: left;
+    margin-left: .16rem;
+  }
+  .advantage .adv-list2 li .a1 {
+    width: .47rem;
+    height: .46rem;
+  }
+  .advantage .adv-list2 li .a2 {
+    width: .45rem;
+    height: .45rem;
+  }
+  .advantage .adv-list2 li .a3 {
+    width: .45rem;
+    height: .44rem;
+  }
+  .advantage .adv-list2 li .a4 {
+    width: .45rem;
+    height: .43rem;
+  }
+  .advantage .adv-list2 li p {
+    font-size: .15rem;
+    line-height: .28rem;
+    margin-top: .08rem;
+  }
+  .advantage .adv-list2 li p span {
+    font-size: .25rem;
+  }
+  .advantage .adv-footer {
+    height: .45rem;
+    font-size: .14rem;
+    line-height: .20rem;
+    margin-top: .15rem;
+  }
+  .advantage .adv-footer span {
+    font-size: .16rem;
+  }
+  .course {
+    padding: .32rem 0 .42rem;
+  }
+  .course .course-h {
+    font-size: .22rem;
+    line-height: .22rem;
+  }
+  .course .tab {
+    margin-top: .15rem;
+  }
+  .course .tab .tab-menu {
+    width: 100%;
+    height: .37rem;
+  }
+  .course .tab .tab-menu li {
+    width: 1.11rem;
+    height: 100%;
+    line-height: .37rem;
+    border-radius: .18rem .18rem .18rem .18rem;
+    margin-left: .10rem;
+    font-size: .15rem;
+  }
+  .course .tab .tab-menu li i {
+    width: .08rem;
+    height: .07rem;
+    bottom: .06rem;
+    left: 50%;
+    margin-left: -0.04rem;
+  }
+  .course .tab .tab-menu .show {
+    line-height: .30rem;
+  }
+  .course .tab .tab-box {
+    padding: .23rem 0 .68rem;
+  }
+  .course .tab .tab-box ul {
+    width: 5.05rem;
+  }
+  .course .tab .tab-box ul li {
+    text-indent: .56rem;
+    margin-bottom: .05rem;
+    width: 100%;
+    height: .30rem;
+    line-height: .30rem;
+    font-size: .14rem;
+    border-radius: .08rem;
+  }
+  .course .tab .course-btn {
+    width: 1.13rem;
+    height: .35rem;
+    border: solid 1px #fff100;
+    font-size: .16rem;
+    line-height: .35rem;
+    bottom: .20rem;
+    left: 50%;
+    margin-left: -0.56rem;
+  }
+  .course .tab .course-bg {
+    width: .72rem;
+    height: .63rem;
+    bottom: .06rem;
+    left: 1.60rem;
+  }
+  .expert {
+    width: 100%;
+    height: 9.05rem;
+  }
+  .expert .expert-h {
+    width: 100%;
+    height: 1.04rem;
+    padding-top: .30rem;
+    font-size: .14rem;
+    line-height: .20rem;
+  }
+  .expert .expert-h h3 {
+    font-size: .22rem;
+    line-height: .22rem;
+    margin-bottom: .07rem;
+  }
+  .expert .expert-list {
+    width: 100%;
+    height: 6.66rem;
+    margin: .09rem auto .18rem;
+  }
+  .expert .expert-list li {
+    width: 1.5rem;
+    height: 2.23rem;
+    border: none;
+  }
+  .expert .expert-list li .title {
+    padding: .10rem 0;
+    font-size: .15rem;
+  }
+  .expert .expert-list li .mask2 {
+    height: .33rem;
+  }
+  .expert .expert-list .ml {
+    margin-left: 3rem;
+  }
+  .expert .expert-c {
+    width: 3rem;
+    height: 2.23rem;
+    top: 3.66rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    border: none;
+  }
+  .expert .expert-c div {
+    padding: .48rem .24rem 0 .24rem;
+    font-size: .12rem;
+    line-height: .20rem;
+  }
+  .expert .expert-c div h3 {
+    font-size: .16rem;
+  }
+  .expert .expert-btn {
+    width: 1.92rem;
+    height: .36rem;
+    line-height: .36rem;
+    font-size: .14rem;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+  }
+  .serve {
+    width: 100%;
+    height: 9.04rem;
+    padding-top: .32rem;
+  }
+  .serve h3 {
+    font-size: .22rem;
+    line-height: .22rem;
+  }
+  .serve .serve-h {
+    font-size: .12rem;
+    line-height: .12rem;
+    margin: .07rem 0 .09rem;
+  }
+  .serve .serve-h2 {
+    font-size: .16rem;
+    line-height: .16rem;
+  }
+  .serve .serve-list {
+    width: 100%;
+    height: 7.84rem;
+    margin-top: .18rem;
+  }
+  .serve .serve-list li {
+    width: 100%;
+    height: .90rem;
+    border-bottom: 0.04rem solid #f08300;
+    margin-bottom: .06rem;
+  }
+  .serve .serve-list li .img {
+    width: 1.25rem;
+    height: .90rem;
+  }
+  .serve .serve-list li .img img {
+    width: 100%;
+    height: 100%;
+  }
+  .serve .serve-list li .text {
+    width: 4.5rem;
+    padding-left: .25rem;
+    height: 100%;
+  }
+  .serve .serve-list li .text h4 {
+    font-size: .18rem;
+    line-height: .18rem;
+    margin: .22rem 0 .05rem;
+  }
+  .serve .serve-list li .text p {
+    font-size: .14rem;
+    line-height: .18rem;
+  }
+  .honor {
+    height: 1042px;
+    padding-top: 40px;
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .honor .honor-h {
+    font-size: 36px;
+    line-height: 36px;
+    color: #333333;
+    text-align: center;
+  }
+  .honor .honor-list {
+    position: relative;
+    height: 705px;
+    margin-top: 40px;
+    margin-bottom: 26px;
+  }
+  .honor .honor-list li {
+    font-size: 28px;
+    line-height: 28px;
+    color: #333333;
+    position: absolute;
+  }
+  .honor .honor-list li img {
+    width: 100%;
+    height: 100%;
+  }
+  .honor .honor-list .h1 {
+    top: 83px;
+    left: 225px;
+    width: 113px;
+    height: 180px;
+  }
+  .honor .honor-list .h2 {
+    top: 0;
+    left: 444px;
+    width: 113px;
+    height: 180px;
+  }
+  .honor .honor-list .h3 {
+    top: 57px;
+    right: 171px;
+    width: 191px;
+    height: 129px;
+  }
+  .honor .honor-list .h4 {
+    top: 418px;
+    right: 0;
+    width: 188px;
+    height: 145px;
+  }
+  .honor .honor-list .h5 {
+    left: 357px;
+    bottom: 0;
+    width: 195px;
+    height: 141px;
+  }
+  .honor .honor-list .h6 {
+    right: 212px;
+    bottom: 30px;
+    width: 204px;
+    height: 143px;
+  }
+  .honor .honor-list .h7 {
+    left: 124px;
+    bottom: 56px;
+    width: 194px;
+    height: 136px;
+  }
+  .honor .honor-list .h8 {
+    top: 319px;
+    left: 0;
+    width: 196px;
+    height: 132px;
+  }
+  .honor .honor-list .h9 {
+    top: 190px;
+    right: 18px;
+    width: 115px;
+    height: 180px;
+  }
+  .honor .honor-list .h10 {
+    width: 244px;
+    height: 280px;
+    top: 210px;
+    left: 380px;
+  }
+  .honor .honor-list .h11 {
+    width: 255px;
+    height: 28px;
+    top: 482px;
+    left: 377px;
+  }
+  .honor .honor-footer {
+    width: 100%;
+    height: 209px;
+    padding-top: 26px;
+    background-color: #f08300;
+    position: relative;
+  }
+  .honor .honor-footer p {
+    font-size: 26px;
+    line-height: 35px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .honor .honor-footer .honor-btn {
+    width: 318px;
+    height: 58px;
+    background-color: #ffff00;
+    font-size: 24px;
+    line-height: 58px;
+    color: #000000;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 64px;
+    left: 50%;
+    margin-left: -159px;
   }
 }
