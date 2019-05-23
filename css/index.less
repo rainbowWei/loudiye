@@ -50,27 +50,42 @@ body{
         }
     }
 }
+//小视频
+.attention{
+    height: 600px;
+    font-size: 18px;   
+    position: relative;
+    .content3{
+        width: 1200px;
+        height: 100%;
+        background: #fff; 
+        position: absolute;
+        top:-55px;
+        left: 50%;
+        margin-left: -600px;
+    }
+    video{
+        position: absolute;
+        top:86px;
+        left: 50%;
+        margin-left: -450px;
+        width: 900px;  
+        height: 505px;
+    }
+
+}
 //存在问题部分
 .problem{
     height: 842px;
     width: 100%;
     background: #fff;
     position: relative;
-    border-bottom:1px solid #e1e1e1;
-    .content3{
-        height: 892px;
-        background: #fff;
-        position: absolute;
-        top:-50px;
-        left: 50%;
-        margin-left: -600px;
-    }
+    border-bottom:1px solid #e1e1e1; 
     .pro-h{
         font-size: 36px;
         line-height: 36px;
         color: #333333;
         text-align: center;
-        margin-top: 69px;
     }
     .pro-list{
         width: 1000px;
@@ -427,9 +442,8 @@ body{
     
         li{
             float: left;
-            width: 248px;
+            width: 250px;
             height: 368px;
-            border: 1px solid #fff;
             position: relative;
             .img{
                 width:100%;
@@ -444,10 +458,10 @@ body{
             }
             .title{
                 position: absolute;
-                left: 0px;
-                bottom:0px;
+                left: 1px;
+                bottom:0;
                 text-align: center;
-                width: 100%; 
+                width: 248px; 
                 padding:10px 0;
                 color: #ffffff;
                 font-size: 24px;
@@ -458,10 +472,10 @@ body{
                     background:#442500;
                     opacity: 0.5;
                     filter:alpha(opacity=50);
-                    left: 0px;
-                    bottom:0px;
+                    left: 1px;
+                    bottom:0;
                     z-index:40;
-                    width: 100%;
+                    width: 248px; 
                     height:51px;
                 }
         }
@@ -470,21 +484,20 @@ body{
         }
         .show-f{
             .mask2{
-                background: #f08300;
+                background: #ec1a69;
                 opacity: 0.7;
                 filter:alpha(opacity=70);  
             }
         }
     }
     .expert-c{
-        width: 498px;
+        width: 500px;
         height: 368px;
-        top: 615px;
+        top: 614px;
         left: 50%;
         margin-left: -250px;
-        background: #ffa200;
+        background: url(../images/bg.jpg);
         background-size: 100% 100%;
-        border: 1px solid #fff;
         position: absolute;
         div{
             padding:91px 30px 0 60px;
@@ -506,7 +519,7 @@ body{
         height: 58px;
         line-height: 58px;
         text-align: center;
-        background-color: #f08300;
+        background-color: #ec1a69;
         font-size: 24px;
         color: #ffffff;
         display: block;
@@ -714,6 +727,7 @@ body{
             height: 332px;
             margin: 47px 0 0 55px;
             background: url(../images/form.png);
+            background-size: 100% 100%;
         }
         .f-right{
             width: 480px;
@@ -732,8 +746,11 @@ body{
                 height: 286px;
                 padding: 30px 0 0 40px;
                 background-color: #ffffff;
+
                 div{
                     margin-bottom: 10px;
+                    height: 50px;
+                    position: relative;
                 }
                 span{
                     font-size: 24px;
@@ -741,8 +758,12 @@ body{
                     color: #333333;
                 }
                 input{
+                    position: absolute;
+                    right: 30px;
+                    top:0;
                     width: 278px;
                     height: 50px;
+                    line-height: 50px;
                     background-color: #ffffff;
                     border-radius: 26px;
                     border: solid 1px #e1e1e1;
@@ -814,6 +835,8 @@ body{
     .header-b{
         width: 100%;
         height: 3.85rem;
+        background: url(../images/banner1.png);
+        background-size: 100% 100%;
         .header{
             width: 100%;
             height: .49rem;
@@ -835,20 +858,33 @@ body{
             }
         }
     }
-    //存在问题部分
-    .problem{
-        height: 4.95rem;
+    //小视频
+    .attention{
+        height: 4.08rem;
+        width: 100%;
         .content3{
             width: 7.2rem;
-            height: 5.25rem;
-            top:-.3rem;
+            height: 100%;
+            top:0;
             left: 50%;
             margin-left: -3.6rem;
         }
+        video{
+            width: 5.62rem;
+            height: 3.15rem;
+            top:.54rem;
+            left: 50%;
+            margin-left: -2.81rem;
+        }
+
+    }
+    //存在问题部分
+    .problem{
+        height: 4.95rem;
+       
         .pro-h{
             font-size: .22rem;
             line-height: .22rem;
-            margin-top: .3rem;
         }
         .pro-list{
             width: 6rem;
@@ -872,7 +908,8 @@ body{
                         line-height: .3rem;
                         padding: 0 .20rem;
                         border-radius: .15rem;
-                        border: solid .01rem #d1d1d1;
+                        border: none;
+                        background: #f5f5f5;
                         margin-bottom: .05rem;
                         font-size: .14rem;
                     
@@ -884,15 +921,15 @@ body{
                     }
                     .red{
                         background:#f12c3e;
-                        border: solid .01rem #f12c3e;
+                        border: none;
                     }
                     .green{
                         background: #77d018;
-                        border: solid .01rem #77d018;
+                        border: none;
                     }
                     .yellow{
                         background: #ffa200;
-                        border: solid .01rem #ffa200;
+                        border: none;
                     }
                 }
             }
@@ -1100,13 +1137,14 @@ body{
             li{
                 width: 1.5rem;
 	            height: 2.23rem;
-                border: none;
                 .title{
                     padding:.10rem 0;
                     font-size: .15rem;
+                    width:1.48rem;
                     }
                 .mask2 {
                         height:.33rem;
+                        width:1.48rem;
                     }
             }
             .ml{
@@ -1175,8 +1213,9 @@ body{
                     }
                 }
                 .text{
-                    width: 4.5rem;
+                    width: 4.4rem;
                     padding-left: .25rem;
+                    padding-right: .10rem;
                     height: 100%;
                     h4{
                         font-size: .18rem;
@@ -1193,124 +1232,186 @@ body{
     }
     //所获荣誉
     .honor{
-        height: 1042px;
-        padding-top:40px;
+        height: 6.32rem;
+        padding-top:.32rem;
         position: relative;
         border-bottom:1px solid #e1e1e1;
         .honor-h{
-            font-size: 36px;
-            line-height: 36px;
-            color: #333333;
-            text-align: center;
+            font-size: .22rem;
+            line-height: .22rem;
         }
         .honor-list{
             position: relative;
-            height: 705px;
-            margin-top: 40px;
-            margin-bottom: 26px;
+            height: 4.25rem;
+            margin-top: .20rem;
+            margin-bottom: .17rem;
             li{
-                font-size: 28px;
-                line-height: 28px;
-                color: #333333;
-                position: absolute;
-                img{
-                    width: 100%;
-                    height:100%;
-                }
+                font-size: .18rem;
+                line-height:.18rem;
             }
             .h1{
-                top:83px;
-                left: 225px;
-                width: 113px;
-                height: 180px;
+                top:.49rem;
+                left: 1.35rem;
+                width: .70rem;
+                height: 1.10rem;
             }
             .h2{
                 top:0;
-                left: 444px;
-                width: 113px;
-                height: 180px;
+                left: 2.67rem;
+                width: .69rem;
+                height: 1.09rem;
             }
             .h3{
-                top:57px;
-                right: 171px;
-                width: 191px;
-                height: 129px;
+                top:.35rem;
+                right:1rem;
+                width: 1.15rem;
+	            height: .77rem;
             }
             .h4{
-                top:418px;
+                top:2.51rem;
                 right: 0;
-                width: 188px;
-                height: 145px;
+                width: 1.12rem;
+                height: .88rem;
             }
             .h5{
-                left: 357px;
+                left: 2.15rem;
                 bottom: 0;
-                width: 195px;
-                height: 141px;
+                width: 1.18rem;
+	            height: .85rem;
             }
             .h6{
-                right: 212px;
-                bottom: 30px;
-                width: 204px;
-                height: 143px;
+                right: 1.30rem;
+                bottom: .18rem;
+                width: 1.22rem;
+	            height: .86rem;
             }
             .h7{
-                left: 124px;
-                bottom: 56px;
-                width: 194px;
-                height: 136px;
+                left:.75rem;
+                bottom: .31rem;
+                width: 1.17rem;
+	            height: .82rem;
             }
             .h8{
-                top:319px;
+                top:1.92rem;
                 left: 0;
-                width: 196px;
-                height: 132px;
+                width: 1.17rem;
+	            height: .79rem;
             }
             .h9{
-                top:190px;
-                right: 18px;
-                width: 115px;
-                height: 180px;
+                top:1.14rem;
+                right: .10rem;
+                width: .70rem;
+	            height: 1.08rem;
             }
             .h10{
-                width: 244px;
-                height: 280px;
-                top:210px;
-                left: 380px;
+                width: 1.48rem;
+	            height: 1.65rem;
+                top:1.26rem;
+                left: 2.39rem;
             }
             .h11{
-                width: 255px;
-                height: 28px;
-                top:482px;
-                left: 377px;
+                width: 1.62rem;
+	            height: .19rem;
+                top:2.90rem;
+                left: 2.32rem;
             }
         }
         .honor-footer{
             width: 100%;
-            height: 209px;
-            padding-top: 26px;
-            background-color: #f08300;
-            position: relative;
+            height: 1.32rem;
+            padding-top: .17rem;
             p{
-                font-size: 26px;
-                line-height: 35px;
-                color: #ffffff; 
-                text-align: center;
+                font-size: .16rem;
+                line-height: .22rem;
             }
             .honor-btn{
-                width: 318px;
-                height: 58px;
-                background-color: #ffff00;
-                font-size: 24px;
-                line-height: 58px;
-                color: #000000;
-                text-align: center;
-                display: block;
-                position: absolute;
-                bottom: 64px;
+                width: 1.91rem;
+	            height: .35rem;
+                font-size: .16rem;
+                line-height: .35rem;
+                bottom: .41rem;
                 left: 50%;
-                margin-left: -159px;
+                margin-left: -.80rem;
             }
         }
+    }
+    //表单
+    .form{
+        height: 2.77rem;
+        padding-top: .23rem;
+        .form-c{
+            width: 6rem;
+            height: 2.48rem;
+            border-radius: .07rem;
+            .f-left{
+                width: 2.07rem;
+                height: 2.00rem;
+                margin: .29rem 0 0 .32rem;
+            }
+            .f-right{
+                width: 2.88rem;
+                height: 2.33rem;;
+                padding-top:.15rem;
+                margin-right: .38rem;
+                h3{
+                    font-size: .18rem;
+                    line-height: .18rem;
+                }
+                .f-c{
+                    margin-top: .10rem;
+                    width: 2.69rem;
+                    height: 1.75rem;
+                    padding: .19rem 0 0 .19rem;
+                    div{
+                        margin-bottom: .1rem;
+                        height: .31rem;
+                    }
+                    span{
+                        font-size: .16rem;
+                        line-height: .32rem;
+                    }
+                    input{
+                        right: .2rem;
+                        width: 1.69rem;
+                        height: .31rem;
+                        line-height: .31rem;
+                        border-radius: .15rem;
+                        text-indent: .12rem;
+                        font-size: .12rem;
+                    }
+                    .form-btn{
+                        width: 1.09rem;
+	                    height: .31rem;
+                        border-radius: .15rem;
+                        font-size: .14rem;
+                        line-height: .31rem;
+                        letter-spacing: .06rem;
+                        margin: .17rem 0 0 .78rem;
+                    }
+                }
+            }
+        }
+    }
+    //footer
+    .footer{
+        width: 100%;
+        height:.5rem;
+        font-size: .12rem;
+        line-height:.5rem;
+        margin-bottom: 1rem;
+    }
+
+    //返回顶部
+    #back{
+        display: none; /* 默认隐藏 */
+        position: fixed; 
+        bottom: 1.5rem; 
+        right: .20rem;  
+        z-index: 99; 
+        cursor: pointer; 
+        width:.50rem;
+        height:.50rem;
+        background: url(../images/back.png);
+        background-size: 100% 100%;
     }
 }

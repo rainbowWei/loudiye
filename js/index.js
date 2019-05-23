@@ -1,7 +1,17 @@
 $(function(){
 
+    if($(window).width()>1024){
+        //PC端
+        var url ="https://bjxxw-public.oss-cn-beijing.aliyuncs.com/%28%E5%AD%97%E5%B9%95%E7%89%88%296988%E6%9D%9C%E8%80%81%E5%B8%88%E5%BC%80%E7%AF%87%20%281%29.mp4" ;
+        $("#source").attr("src",url);
+    }
+    else{
+        //移动端
+        var m_url ="https://bjxxw-public.oss-cn-beijing.aliyuncs.com/video.mp4" ;
+        $("#source").attr("src",m_url);
+    }
     // 家庭干预训练体系课选项卡
-  $(".tab-menu li").click(function(){
+    $(".tab-menu li").click(function(){
         var _index = $(this).index();
         $(this).append("<i></i>");
         $(this).addClass("show").siblings().removeClass("show").children().filter("i").remove(); 
@@ -44,17 +54,13 @@ $(function(){
 
    //免费解答
    $("#submit").on("click",function(){
-    var F1 = $('#f1').val();
-    var F2 = $('#f2').val();
-    var F3 = $('#f3').val();
-    var F4 = $('#f4').val();
-
+    var Iphone = $('#iphone').val();
     var re = /^1[345789]\d{9}$/g;
 
-      if((F3 == "")){
+      if((Iphone == "")){
             alert("电话号码不能为空！！");
             return false;
-        }else if((!re.exec(F3))){
+        }else if((!re.exec(Iphone))){
             alert("电话号码输入有误！！");
             return false;
         }else{
@@ -68,54 +74,8 @@ $(function(){
         //         type:'post',
         //         success:function(mydata){
         //             alert("提交成功");
-        //             $('#f1').val("");
-        //             $('#f2').val("");
-        //             $('#f3').val("");
-        //             $('#f4').val("");  
+        //             $('#iphone').val("");         
         //         }
         //     })
     })
-
-    //免费领取视频
-    $("#submit2").on("click",function(){
-        var Message = $('#message').val();
-        var Parent = $('#parent').val();
-        var Age = $('#age').val();
-        var City = $('#city').val();
-        var Phone = $('#phone').val();
-
-        var re = /^1[345789]\d{9}$/g;
-
-            if((Parent == "")){
-                alert("家长称呼不能为空！！");
-                return false;
-            }else if((Age == "")){
-                alert("年龄不能为空！！");
-                return false;
-            }else if((Phone == "")){
-                alert("电话号码不能为空！！");
-                return false;
-            }else if((!re.exec(Phone))){
-                alert("电话号码输入有误！！");
-                return false;
-            }else{
-                alert("提交成功");
-            }
-        
-            // $.ajax({
-            //         url:'',
-            //         data:{},
-            //         dataType:'html',
-            //         type:'post',
-            //         success:function(mydata){
-            //             alert("提交成功");
-            //             $('#message').val("");
-            //             $('#parent').val("");
-            //             $('#age').val("");
-            //             $('#city').val("");
-            //             $('#phone').val("");      
-            //         }
-            //     })
-    })
-
 })
