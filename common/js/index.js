@@ -1,15 +1,5 @@
 $(function(){
 
-    if($(window).width()>1024){
-        //PC端
-        var url ="https://bjxxw-public.oss-cn-beijing.aliyuncs.com/%28%E5%AD%97%E5%B9%95%E7%89%88%296988%E6%9D%9C%E8%80%81%E5%B8%88%E5%BC%80%E7%AF%87%20%281%29.mp4" ;
-        $("#source").attr("src",url);
-    }
-    else{
-        //移动端
-        var m_url ="https://bjxxw-public.oss-cn-beijing.aliyuncs.com/video.mp4" ;
-        $("#source").attr("src",m_url);
-    }
     // 家庭干预训练体系课选项卡
     $(".tab-menu li").click(function(){
         var _index = $(this).index();

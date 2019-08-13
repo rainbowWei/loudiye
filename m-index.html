@@ -7,61 +7,51 @@
     <meta name="description" content="希望教育成立于2011年，以“MUST行为引导技术”为核心，旗下包括 “星希望康复中心”、“星希望网校”、“MUST研发中心”三大业务板块。致力于为孤独症儿童和家庭及康复训练师，提供评估、干预、培训一体化的专业服务。">
     <title>星希望网校_专注自闭症行业，研发自闭症家庭干预训练课程，让更多家庭更从容!</title>
     <link rel="stylesheet" href="./common/css/reset.css">
-    <link rel="stylesheet" href="./computer/css/index.css">
+    <link rel="stylesheet" href="./mobile/css/index.css">
     <script src="./common/js/jquery-1.11.3.js"></script>
     <script src="./common/js/index.js"></script>
-    <script src="./computer/js/index.js"></script>
+    <script src="./mobile/js/index.js"></script>
+   
+   
+    <script type="text/javascript">
+        //移动端   设计图纸是750px
+        $(function(){ 
+                document.querySelector("html").style.opacity = 1;
+                $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
+                $(window).resize(function(){
+                    $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
+                    document.getElementsByTagName("html")[0].style.opacity = 1;
+    
+                });
+           
+        });
+    </script>
 </head>
 <body>
    
-    <div class="header-b"> 
-        <!-- 头部部分 -->
-        <div class="header">
-            <div class="content2 clearfix">
-                <div class="logo fl"></div>
-                <div class="phone-from fl">
-                    <input type="text" placeholder="请输入手机号码" maxlength="11" class="txt">
-                    <div class="btn">免费领取体验课</div>
-                </div>
-                <p class="header-error">手机号码不能为空</p>
-                <div class="contact fr">
-                    <p class="p1">全国咨询热线</p>
-                    <p class="p2">010-52668752</p>
-                </div>
-            </div>
-        </div>
-        <div class="phone-from2">
-            <h3>体验课<span>免费</span>领取</h3>
-            <div class="phone-from">
-                <input type="text" placeholder="请输入手机号码" maxlength="11" class="txt">
-                <div class="btn">立即领取</div>    
-            </div>
-            <p class="error">手机号码不能为空</p>
+  
+    <!-- 头部部分 -->
+    <div class="header">
+        <div class="content2 clearfix">
+            <div class="logo fl"></div>
+            <a href="tel:400-618-0402">
+              <div class="contact fr">
+                  <p class="p1">全国咨询热线</p>
+                  <p class="p2">400-618-0402</p>
+              </div>
+            </a>
         </div>
     </div>
-    <!-- 点击领取时的弹窗 -->
-    <div class="alertbox" id="alertBox">
-        <h3>体验课免费领取</h3>
-        <div class="alert-close"></div>
-        <div class="from">
-            <input type="text" class="phone" placeholder="请输入手机号码">
-            <div class="form_code">
-                <input class="text fl" type="text" placeholder="请输入验证码" maxlength="6">
-                <div class="get_captcha fr">点击获取验证码</div>  
-            </div>
-            <p class="code-error">请输入验证码</p>
-        </div>
-        
-        <div class="submit">立即领取</div>
-    </div>
-    <div id="shelter"></div>
-
+   
      <!-- 小视频 -->
      <div class="attention">
-         <div class="content">
-            <video poster="/common/images/video.png" id="source" src="https://www.xingxiwang.net/data/upload/videos/video-pc.mp4" type="video/mp4" controls preload   >
-                您的浏览器版本过低不支持Video标签，请您升级此浏览器。
-            </video>
+        <video poster="/common/images/video.png" id="source" src = "https://www.xingxiwang.net/data/upload/videos/video.mp4" type="video/mp4"  preload controls >
+            您的浏览器版本过低不支持Video标签，请您升级此浏览器。
+        </video>
+        <div class="wave-wrap" onclick="playVid()" id="play_btn">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
         </div>
     </div>
     <!--存在问题部分 -->
@@ -611,6 +601,21 @@
 
     <!-- 返回顶部 -->
     <div id="back"></div>
+    <script>
+        var myvideo=document.getElementById("source");
+        var btn=document.getElementById("play_btn");
+        
+            //播放视频
+            function playVid(){
+                myvideo.play();
+                btn.style.display="none";
+                
+            }
+            //暂停视频
+            function pauseVid(){
+                myvideo.pause();
+            }
+    </script>
     <!-- <script>
         (function() {var _53code = document.createElement("script");
         _53code.src = "https://tb.53kf.com/code/code/10182209/1";
@@ -618,5 +623,6 @@
         s.parentNode.insertBefore(_53code, s);})
         ();
     </script> -->
+   
 </body>
 </html>
