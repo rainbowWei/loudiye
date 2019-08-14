@@ -7,6 +7,7 @@ div#mobile_icon_div {
 }
 .content2 {
   width: 1200px;
+  height: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -182,6 +183,13 @@ body {
   border-radius: 30px;
   text-align: center;
   line-height: 35px;
+  background: #dfdfdf;
+  color: #fff;
+}
+.alertbox .form_code .on {
+  color: #f12c3e;
+  background: #fff;
+  border-color: #f12c3e;
 }
 .alertbox .code-error {
   font-size: 12px;

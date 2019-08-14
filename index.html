@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">                                                                                                                                                                                                                                                                                                                                                     
     <meta name="description" content="希望教育成立于2011年，以“MUST行为引导技术”为核心，旗下包括 “星希望康复中心”、“星希望网校”、“MUST研发中心”三大业务板块。致力于为孤独症儿童和家庭及康复训练师，提供评估、干预、培训一体化的专业服务。">
     <title>星希望网校_专注自闭症行业，研发自闭症家庭干预训练课程，让更多家庭更从容!</title>
     <link rel="stylesheet" href="./common/css/reset.css">
@@ -18,12 +18,12 @@
         <!-- 头部部分 -->
         <div class="header">
             <div class="content2 clearfix">
-                <div class="logo fl"></div>
+                <div class="logo fl"></div>                                                                           
                 <div class="phone-from fl">
-                    <input type="text" placeholder="请输入手机号码" maxlength="11" class="txt">
-                    <div class="btn">免费领取体验课</div>
+                    <input type="phone" placeholder="请输入手机号码" maxlength="11" class="txt" id="phone">
+                    <div class="btn" id="btn">免费领取体验课</div>
                 </div>
-                <p class="header-error">手机号码不能为空</p>
+                <p class="header-error"></p>
                 <div class="contact fr">
                     <p class="p1">全国咨询热线</p>
                     <p class="p2">010-52668752</p>
@@ -33,7 +33,7 @@
         <div class="phone-from2">
             <h3>体验课<span>免费</span>领取</h3>
             <div class="phone-from">
-                <input type="text" placeholder="请输入手机号码" maxlength="11" class="txt">
+                <input type="phone" placeholder="请输入手机号码" maxlength="11" class="txt">
                 <div class="btn">立即领取</div>    
             </div>
             <p class="error">手机号码不能为空</p>
@@ -46,13 +46,13 @@
         <div class="from">
             <input type="text" class="phone" placeholder="请输入手机号码">
             <div class="form_code">
-                <input class="text fl" type="text" placeholder="请输入验证码" maxlength="6">
+                <input class="text fl" type="phone" placeholder="请输入验证码" maxlength="6" id="code">
                 <div class="get_captcha fr">点击获取验证码</div>  
             </div>
-            <p class="code-error">请输入验证码</p>
+            <p class="code-error"></p>
         </div>
         
-        <div class="submit">立即领取</div>
+        <div class="submit" id="code-submit">立即领取</div>
     </div>
     <div id="shelter"></div>
 

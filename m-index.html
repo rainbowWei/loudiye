@@ -45,15 +45,40 @@
    
      <!-- 小视频 -->
      <div class="attention">
-        <video poster="/common/images/video.png" id="source" src = "https://www.xingxiwang.net/data/upload/videos/video.mp4" type="video/mp4"  preload controls >
+        <video id="source" src = "https://www.xingxiwang.net/data/upload/videos/video.mp4" type="video/mp4"  preload controls>
             您的浏览器版本过低不支持Video标签，请您升级此浏览器。
         </video>
+        <img src="/common/images/video.png" alt="" id="play_img">
         <div class="wave-wrap" onclick="playVid()" id="play_btn">
           <div class="circle1"></div>
           <div class="circle2"></div>
           <div class="circle3"></div>
         </div>
     </div>
+
+    <!-- 免费领取在线体验课 -->
+    <div class="exp-course">
+        <div class="content">
+            <h3>免费领取<span> 一对一 </span>在线体验课</h3>
+            <div class="from">
+                <input type="phone" placeholder="请输入手机号码" maxlength="11" class="phone">
+                <div class="form-code">
+                    <div class="tips">验证码已发送至 18893460794</div>
+                    <div class="clearfix">
+                        <input class="text fl" type="phone" placeholder="请输入验证码" maxlength="6">
+                        <div class="get-captcha fr">点击获取验证码</div>  
+                    </div>
+                    <div class="form-name">
+                        <span>姓名</span>
+                        <input type="text" placeholder="请输入您家小宝贝名字">
+                    </div>
+                </div>
+                <div class="from-btn">立即领取</div>
+            </div>
+            
+        </div>
+    </div>
+
     <!--存在问题部分 -->
     <div class="problem">
         <div class="content2">
@@ -604,11 +629,13 @@
     <script>
         var myvideo=document.getElementById("source");
         var btn=document.getElementById("play_btn");
+        var img=document.getElementById("play_img");
         
             //播放视频
             function playVid(){
                 myvideo.play();
                 btn.style.display="none";
+                img.style.display="none";
                 
             }
             //暂停视频

@@ -14,6 +14,8 @@ body {
 .content2 {
   width: 6rem;
   margin: 0 auto;
+  height: 100%;
+  position: relative;
 }
 .header {
   width: 100%;
@@ -49,6 +51,15 @@ body {
   height: 4.2rem;
   width: 100%;
   position: relative;
+  margin-top: .49rem;
+}
+.attention img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 .attention video {
   position: absolute;
@@ -80,13 +91,13 @@ body {
   height: .50rem;
   background: url(../../common/images/btn_play.png);
   background-size: 100% 100%;
-  z-index: 2;
+  z-index: 4;
 }
 .attention .wave-wrap .circle1,
 .attention .wave-wrap .circle2,
 .attention .wave-wrap .circle3 {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   width: .4rem;
   height: .4rem;
   border: .04rem solid #fff;
@@ -99,6 +110,85 @@ body {
 }
 .attention .wave-wrap .circle3 {
   animation-delay: 3s;
+}
+.exp-course {
+  width: 100%;
+  height: 100%;
+  padding: .3rem 0 ;
+  background: #f9f9fb;
+}
+.exp-course h3 {
+  font-size: .3rem;
+  text-align: center;
+  margin-bottom: .3rem;
+}
+.exp-course h3 span {
+  font-size: .32rem;
+  color: #ef8200;
+}
+.exp-course .from {
+  width: 5rem;
+  height: 100%;
+  margin-left: .5rem;
+}
+.exp-course .from input {
+  font-size: .22rem;
+}
+.exp-course .from .phone {
+  width: 100%;
+  height: .6rem;
+  border: .01rem solid #dfdfdf;
+  border-radius: .3rem;
+  text-indent: .3rem;
+  display: none;
+}
+.exp-course .from .from-btn {
+  width: 100%;
+  height: .7rem;
+  text-align: center;
+  line-height: .7rem;
+  font-size: .32rem;
+  color: #fff;
+  background: #ef8200;
+  border-radius: .5rem;
+  margin-top: .5rem;
+}
+.exp-course .from .form-code .tips {
+  font-size: .22rem;
+  margin-bottom: .2rem;
+  text-indent: .10rem;
+}
+.exp-course .from .form-code .text {
+  width: 2.4rem;
+  height: .6rem;
+  border: .01rem solid #dfdfdf;
+  border-radius: .3rem;
+  text-indent: .3rem;
+}
+.exp-course .from .form-code .get-captcha {
+  padding: 0 .2rem;
+  height: .6rem;
+  line-height: .6rem;
+  border: .01rem solid #dfdfdf;
+  border-radius: .3rem;
+  font-size: .22rem;
+}
+.exp-course .from .form-code .form-name {
+  width: 100%;
+  height: .6rem;
+  line-height: .6rem;
+  border: .01rem solid #dfdfdf;
+  border-radius: .3rem;
+  margin-top: .20rem;
+  text-indent: .3rem;
+  background: #fff;
+}
+.exp-course .from .form-code .form-name span {
+  font-size: .22rem;
+  margin-right: .1rem;
+}
+.exp-course .from .form-code .form-name input {
+  height: .58rem;
 }
 .problem {
   height: 4.95rem;
@@ -193,6 +283,7 @@ body {
   background: url(../../common/images/circle.png);
   background-size: 100% 100%;
   position: absolute;
+  left: 50%;
   bottom: -0.12rem;
   margin-left: -0.12rem;
   z-index: 1000;
