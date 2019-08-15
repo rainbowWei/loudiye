@@ -134,13 +134,22 @@ body {
 .exp-course .from input {
   font-size: .22rem;
 }
+.exp-course .from .form-phone {
+  display: block;
+}
 .exp-course .from .phone {
   width: 100%;
   height: .6rem;
   border: .01rem solid #dfdfdf;
   border-radius: .3rem;
   text-indent: .3rem;
-  display: none;
+}
+.exp-course .from .error {
+  height: .2rem;
+  font-size: .18rem;
+  color: red;
+  margin-top: .15rem;
+  text-indent: .2rem;
 }
 .exp-course .from .from-btn {
   width: 100%;
@@ -151,7 +160,10 @@ body {
   color: #fff;
   background: #ef8200;
   border-radius: .5rem;
-  margin-top: .5rem;
+  margin-top: .2rem;
+}
+.exp-course .from .form-code {
+  display: none;
 }
 .exp-course .from .form-code .tips {
   font-size: .22rem;
@@ -173,6 +185,10 @@ body {
   border-radius: .3rem;
   font-size: .22rem;
 }
+.exp-course .from .form-code .on {
+  color: #ef8200;
+  border-color: #ef8200;
+}
 .exp-course .from .form-code .form-name {
   width: 100%;
   height: .6rem;
@@ -189,6 +205,54 @@ body {
 }
 .exp-course .from .form-code .form-name input {
   height: .58rem;
+}
+.shelter {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1001;
+}
+.alertbox {
+  display: none;
+  width: 3.4rem;
+  height: 3.28rem;
+  padding: .16rem .40rem .26rem;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1002;
+  margin-top: -1.85rem;
+  margin-left: -2.1rem;
+  border-radius: 8px;
+}
+.alertbox h3 {
+  font-size: .30rem;
+  font-weight: bold;
+  color: #f12c3e;
+  margin-top: .30rem;
+}
+.alertbox .des {
+  margin-top: .40rem;
+}
+.alertbox .des p {
+  margin-bottom: .10rem;
+  font-size: .22rem;
+}
+.alertbox .alert-close {
+  width: .50rem;
+  height: .50rem;
+  background: url(../../common/images/guanbi.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: .20rem;
+  right: .20rem;
+  cursor: pointer;
 }
 .problem {
   height: 4.95rem;

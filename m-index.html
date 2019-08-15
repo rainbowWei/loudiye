@@ -61,24 +61,40 @@
         <div class="content">
             <h3>免费领取<span> 一对一 </span>在线体验课</h3>
             <div class="from">
-                <input type="phone" placeholder="请输入手机号码" maxlength="11" class="phone">
+                <div class="form-phone">
+                    <input type="phone" placeholder="请输入手机号码" maxlength="11" class="phone">
+                    <p class="error"></p>
+                    <div class="from-btn" id="from-btn">立即领取</div>
+                </div>
                 <div class="form-code">
-                    <div class="tips">验证码已发送至 18893460794</div>
+                    <div class="tips"></div>
                     <div class="clearfix">
                         <input class="text fl" type="phone" placeholder="请输入验证码" maxlength="6">
                         <div class="get-captcha fr">点击获取验证码</div>  
                     </div>
                     <div class="form-name">
                         <span>姓名</span>
-                        <input type="text" placeholder="请输入您家小宝贝名字">
-                    </div>
+                        <input class="name" type="text" placeholder="请输入您家小宝贝名字" >
+                    </div> 
+                    <p class="error"></p>
+                    <div class="from-btn" id ="from-btn2">立即领取</div>
                 </div>
-                <div class="from-btn">立即领取</div>
+               
             </div>
             
         </div>
     </div>
-
+    <!-- 点击立即领取的弹窗 -->
+    <div class="alertbox" id="alertBox">
+            <h3>领取成功</h3>
+            <div class="des">
+                <p>恭喜你获取一节一对一免费体验课</p>
+                <p>稍后我们的专业老师会联系您，给您发送适合您孩子的课程</p>
+                <p>请您保持电话的畅通！！！</p>
+            </div>
+            <div class="alert-close" id = "close"></div>
+        </div>
+        <div class="shelter" id="shelter"></div>
     <!--存在问题部分 -->
     <div class="problem">
         <div class="content2">

@@ -137,13 +137,22 @@
             input{
                 font-size: .22rem;
             }
+            .form-phone{
+                display: block;
+            }
             .phone{
                 width: 100%;
                 height: .6rem;
                 border:.01rem solid #dfdfdf;
                 border-radius: .3rem;
                 text-indent: .3rem;
-                display: none;
+            }
+            .error{
+                height: .2rem;
+                font-size: .18rem;
+                color: red;
+                margin-top: .15rem;
+                text-indent: .2rem;
             }
             .from-btn{
                 width: 100%;
@@ -154,9 +163,10 @@
                 color: #fff;
                 background: #ef8200;
                 border-radius: .5rem;
-                margin-top: .5rem;
+                margin-top: .2rem;
             }
             .form-code{
+                display: none;
                 .tips{
                     font-size: .22rem;
                     margin-bottom: .2rem;
@@ -176,6 +186,10 @@
                     border:.01rem solid #dfdfdf;
                     border-radius: .3rem;
                     font-size: .22rem;
+                }
+                .on{
+                    color: #ef8200;
+                    border-color: #ef8200;
                 }
                 .form-name{
                     width: 100%;
@@ -198,6 +212,57 @@
         }
         
     }
+
+    //领取弹窗
+    //点击领取时的弹窗
+ .shelter{
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.6;
+    z-index:1001;
+  }
+  .alertbox{
+    display: none;
+    width: 3.4rem;
+    height: 3.28rem;
+    padding: .16rem .40rem .26rem;
+    background: #fff;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    z-index:1002;
+    margin-top: -1.85rem;
+    margin-left: -2.10rem;
+    border-radius: 8px;
+    h3{
+        font-size: .30rem;
+        font-weight: bold;
+        color: #f12c3e;
+        margin-top: .30rem;
+    }
+    .des{
+        margin-top: .40rem;
+        p{
+            margin-bottom: .10rem;
+            font-size: .22rem;
+        }
+    }
+    .alert-close{
+        width: .50rem;
+        height: .50rem;
+        background: url(../../common/images/guanbi.png);
+        background-size: 100% 100%;
+        position: absolute;
+        top:.20rem;
+        right: .20rem;
+        cursor: pointer;
+    }
+  }
     //存在问题部分
     .problem{
         height: 4.95rem;

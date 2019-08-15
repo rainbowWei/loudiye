@@ -92,6 +92,7 @@ body {
   position: absolute;
   left: 300px;
   bottom: 5px;
+  height: 110px;
 }
 .header-b .phone-from2 .phone-from {
   margin: 0;
@@ -109,8 +110,9 @@ body {
   color: #f12c3e;
   margin-left: 5%;
   margin-top: 5px;
+  height: 15px;
 }
-#shelter {
+.shelter {
   display: none;
   position: fixed;
   top: 0px;
@@ -139,6 +141,12 @@ body {
   font-size: 30px;
   color: #f12c3e;
   margin-top: 30px;
+}
+.alertbox .des {
+  margin-top: 40px;
+}
+.alertbox .des p {
+  margin-bottom: 10px;
 }
 .alertbox .alert-close {
   width: 30px;
@@ -185,6 +193,7 @@ body {
   line-height: 35px;
   background: #dfdfdf;
   color: #fff;
+  cursor: pointer;
 }
 .alertbox .form_code .on {
   color: #f12c3e;
@@ -196,6 +205,7 @@ body {
   color: #f12c3e;
   margin-left: 5%;
   margin-top: 8px;
+  height: 15px;
 }
 .alertbox .submit {
   width: 100%;
