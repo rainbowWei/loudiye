@@ -16,14 +16,13 @@
     <script type="text/javascript">
         //移动端   设计图纸是750px
         $(function(){ 
-                document.querySelector("html").style.opacity = 1;
+            document.querySelector("html").style.opacity = 1;
+            $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
+            $(window).resize(function(){
                 $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
-                $(window).resize(function(){
-                    $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
-                    document.getElementsByTagName("html")[0].style.opacity = 1;
-    
-                });
-           
+                document.getElementsByTagName("html")[0].style.opacity = 1;
+
+            });
         });
     </script>
 </head>
@@ -60,11 +59,11 @@
     <div class="exp-course">
         <div class="content">
             <h3>免费领取<span> 一对一 </span>在线体验课</h3>
-            <div class="from">
+            <div class="form">
                 <div class="form-phone">
                     <input type="phone" placeholder="请输入手机号码" maxlength="11" class="phone">
                     <p class="error"></p>
-                    <div class="from-btn" id="from-btn">立即领取</div>
+                    <div class="form-btn" id="form-btn">立即领取</div>
                 </div>
                 <div class="form-code">
                     <div class="tips"></div>
@@ -77,7 +76,7 @@
                         <input class="name" type="text" placeholder="请输入您家小宝贝名字" >
                     </div> 
                     <p class="error"></p>
-                    <div class="from-btn" id ="from-btn2">立即领取</div>
+                    <div class="form-btn" id ="form-btn2">立即领取</div>
                 </div>
                
             </div>
@@ -609,30 +608,6 @@
                 <a href="https://tb.53kf.com/code/client/10182209/1" class="honor-btn" target="_blank">详情咨询</a>
             </div>
            
-        </div>
-        <div class="circle"></div> 
-    </div>
-    <!-- 表单 -->
-    <div class="form">
-        <div class="content">
-           <div class="form-c clearfix">
-               <div class="f-left fl"></div>
-               <div class="f-right fr">
-                   <h3>免费领取家庭干预试听课</h3>
-                   <div class="f-c">
-                       <div>
-                            <span>孩子年龄：</span><input type="text" placeholder="请输入您的孩子年龄">
-                       </div>
-                       <div>
-                            <span>手机号码：</span><input type="text" placeholder="请输入您的手机号码" id="iphone">
-                       </div>
-                       <div>
-                            <span>所在城市：</span><input type="text" placeholder="请输入您的所在城市">
-                       </div>
-                       <a href="javascript:" class="form-btn" id="submit">提交</a>
-                   </div>
-               </div>
-           </div> 
         </div>
     </div>
     <!-- footer -->

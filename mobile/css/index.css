@@ -85,10 +85,12 @@ body {
 }
 .attention .wave-wrap {
   position: absolute;
-  left: .50rem;
-  bottom: .20rem;
-  width: .50rem;
-  height: .50rem;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  width: 1rem;
+  height: 1rem;
   background: url(../../common/images/btn_play.png);
   background-size: 100% 100%;
   z-index: 4;
@@ -98,9 +100,9 @@ body {
 .attention .wave-wrap .circle3 {
   position: absolute;
   z-index: 3;
-  width: .4rem;
-  height: .4rem;
-  border: .04rem solid #fff;
+  width: .9rem;
+  height: .9rem;
+  border: .05rem solid #fff;
   border-radius: 50%;
   animation: warn 3s ease-out;
   animation-iteration-count: infinite;
@@ -126,32 +128,32 @@ body {
   font-size: .32rem;
   color: #ef8200;
 }
-.exp-course .from {
+.exp-course .form {
   width: 5rem;
   height: 100%;
   margin-left: .5rem;
 }
-.exp-course .from input {
+.exp-course .form input {
   font-size: .22rem;
 }
-.exp-course .from .form-phone {
+.exp-course .form .form-phone {
   display: block;
 }
-.exp-course .from .phone {
+.exp-course .form .phone {
   width: 100%;
   height: .6rem;
   border: .01rem solid #dfdfdf;
   border-radius: .3rem;
   text-indent: .3rem;
 }
-.exp-course .from .error {
+.exp-course .form .error {
   height: .2rem;
   font-size: .18rem;
   color: red;
   margin-top: .15rem;
   text-indent: .2rem;
 }
-.exp-course .from .from-btn {
+.exp-course .form .form-btn {
   width: 100%;
   height: .7rem;
   text-align: center;
@@ -162,22 +164,22 @@ body {
   border-radius: .5rem;
   margin-top: .2rem;
 }
-.exp-course .from .form-code {
+.exp-course .form .form-code {
   display: none;
 }
-.exp-course .from .form-code .tips {
+.exp-course .form .form-code .tips {
   font-size: .22rem;
   margin-bottom: .2rem;
   text-indent: .10rem;
 }
-.exp-course .from .form-code .text {
+.exp-course .form .form-code .text {
   width: 2.4rem;
   height: .6rem;
   border: .01rem solid #dfdfdf;
   border-radius: .3rem;
   text-indent: .3rem;
 }
-.exp-course .from .form-code .get-captcha {
+.exp-course .form .form-code .get-captcha {
   padding: 0 .2rem;
   height: .6rem;
   line-height: .6rem;
@@ -185,11 +187,11 @@ body {
   border-radius: .3rem;
   font-size: .22rem;
 }
-.exp-course .from .form-code .on {
+.exp-course .form .form-code .on {
   color: #ef8200;
   border-color: #ef8200;
 }
-.exp-course .from .form-code .form-name {
+.exp-course .form .form-code .form-name {
   width: 100%;
   height: .6rem;
   line-height: .6rem;
@@ -199,11 +201,11 @@ body {
   text-indent: .3rem;
   background: #fff;
 }
-.exp-course .from .form-code .form-name span {
+.exp-course .form .form-code .form-name span {
   font-size: .22rem;
   margin-right: .1rem;
 }
-.exp-course .from .form-code .form-name input {
+.exp-course .form .form-code .form-name input {
   height: .58rem;
 }
 .shelter {
@@ -880,79 +882,6 @@ body {
   text-align: center;
   display: block;
   position: absolute;
-}
-.form {
-  height: 2.77rem;
-  padding-top: .23rem;
-}
-.form .form-c {
-  width: 6rem;
-  height: 2.48rem;
-  border-radius: .07rem;
-  background-color: #01b1e6;
-}
-.form .form-c .f-left {
-  width: 2.07rem;
-  height: 2.00rem;
-  margin: .29rem 0 0 .32rem;
-  background: url(../../common/images/form.png);
-  background-size: 100% 100%;
-}
-.form .form-c .f-right {
-  width: 2.88rem;
-  height: 2.33rem;
-  padding-top: .15rem;
-  margin-right: .38rem;
-}
-.form .form-c .f-right h3 {
-  font-size: .18rem;
-  line-height: .18rem;
-  color: #eff6f8;
-  text-align: center;
-}
-.form .form-c .f-right .f-c {
-  margin-top: .10rem;
-  width: 2.69rem;
-  height: 1.75rem;
-  padding: .19rem 0 0 .19rem;
-  background-color: #ffffff;
-}
-.form .form-c .f-right .f-c div {
-  margin-bottom: .1rem;
-  height: .31rem;
-  position: relative;
-}
-.form .form-c .f-right .f-c span {
-  font-size: .16rem;
-  line-height: .32rem;
-  color: #333333;
-}
-.form .form-c .f-right .f-c input {
-  position: absolute;
-  top: 0;
-  right: .2rem;
-  width: 1.69rem;
-  height: .31rem;
-  line-height: .31rem;
-  border-radius: .15rem;
-  text-indent: .12rem;
-  font-size: .12rem;
-  background-color: #ffffff;
-  border: solid 1px #e1e1e1;
-  color: #999999;
-}
-.form .form-c .f-right .f-c .form-btn {
-  width: 1.09rem;
-  height: .31rem;
-  border-radius: .15rem;
-  font-size: .14rem;
-  line-height: .31rem;
-  letter-spacing: .06rem;
-  margin: .17rem 0 0 .78rem;
-  background-color: #f22b43;
-  color: #ffff00;
-  text-align: center;
-  display: block;
 }
 .footer {
   width: 100%;

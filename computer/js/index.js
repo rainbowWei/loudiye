@@ -21,7 +21,7 @@ function cancel(alertBox,shelter) {
 
 
 //获得焦点清除错误提示语
-$( '.phone-from #phone' ).focus( function(){
+$( '.phone-form #phone' ).focus( function(){
   $(".header-error").text("");
 })
 
@@ -32,17 +32,17 @@ $( '.form-code .text' ).focus( function(){
   $(".code-error").text("");
 })
 //点击免费领取体验课
-from($(".phone-from #btn"),$("#phone"),$(".header-error"))
+form($(".phone-form #btn"),$("#phone"),$(".header-error"))
 //点击立即领取
-from($(".phone-from #btn2"),$("#phone2"),$(".error"))
+form($(".phone-form #btn2"),$("#phone2"),$(".error"))
 
 
 
-function from(clickelement,phone,error){
+function form(clickelement,phone,error){
   clickelement.click(function(){
     var Phone = phone.val();
     var contac = /^1[345789]\d{9}$/g;
-    var count = 10;
+    var count = 60;
    if((Phone == "")){
       error.text("手机号码不能为空");
     }else if(!contac.exec(Phone)){
@@ -67,8 +67,8 @@ function from(clickelement,phone,error){
             
             //点击重新发送验证码
             $(".get-captcha").click(function(){
-              count = 10;  
-              var Phone = $(".from .phone").val();
+              count = 60;  
+              var Phone = $(".form .phone").val();
               $(".get-captcha").removeClass('on');
               $(".get-captcha").attr('disabled','disabled');  
               $(".get-captcha").html(count + "s后再次获取"); 
@@ -105,7 +105,7 @@ function from(clickelement,phone,error){
               if(msg == 1){
                 showSelectBox( $("#alertBox"),$("#shelter"));
               }else{
-                error.text("请您不要频繁的点击发送");
+                error.text("该手机号已领取！！");
               }
             }  
         });
@@ -118,7 +118,7 @@ function from(clickelement,phone,error){
   //点击立即提交
   $("#code-submit").click(function(){
 
-    var Phone = $(".from .phone").val();
+    var Phone = $(".form .phone").val();
     var Code = $(".form-code .text").val();
 
     var contac = /^1[345789]\d{9}$/g;
@@ -142,7 +142,7 @@ function from(clickelement,phone,error){
             
             showSelectBox( $("#alertBox2"),$("#shelter2"));
             cancel($("#alertBox"),$("#shelter"));
-            $("#phone,#phone2,.form-code .text,.from .phone").val("");
+            $("#phone,#phone2,.form-code .text,.form .phone").val("");
           }
           else{
               $(".code-error").html("您输入的正确的验证码！！！") 

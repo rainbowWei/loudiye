@@ -59,13 +59,13 @@ body {
   top: 62px;
   left: 348px;
 }
-.header-b .phone-from {
+.header-b .phone-form {
   width: 350px;
   height: 35px;
   margin-left: 200px;
   margin-top: 22px;
 }
-.header-b .phone-from .txt {
+.header-b .phone-form .txt {
   float: left;
   width: 150px;
   height: 100%;
@@ -75,7 +75,7 @@ body {
   font-weight: 400;
   background: #f2f3f5;
 }
-.header-b .phone-from .btn {
+.header-b .phone-form .btn {
   float: left;
   min-width: 170px;
   height: 100%;
@@ -90,12 +90,15 @@ body {
 }
 .header-b .phone-from2 {
   position: absolute;
-  left: 300px;
-  bottom: 5px;
+  left: 100px;
+  bottom: 40px;
   height: 110px;
 }
-.header-b .phone-from2 .phone-from {
+.header-b .phone-from2 .phone-form {
   margin: 0;
+}
+.header-b .phone-from2 .phone-form .txt {
+  background: #fff;
 }
 .header-b .phone-from2 h3 {
   font-size: 30px;
@@ -158,10 +161,10 @@ body {
   right: 20px;
   cursor: pointer;
 }
-.alertbox .from {
+.alertbox .form {
   margin-top: 30px;
 }
-.alertbox .from input {
+.alertbox .form input {
   font-size: 16px;
 }
 .alertbox .phone {
@@ -171,12 +174,12 @@ body {
   border-radius: 30px;
   text-indent: 20px;
 }
-.alertbox .form_code {
+.alertbox .form-code {
   height: 35px;
   width: 100%;
   margin-top: 20px;
 }
-.alertbox .form_code .text {
+.alertbox .form-code .text {
   width: 120px;
   height: 100%;
   border: 1px solid #dfdfdf;
@@ -184,7 +187,7 @@ body {
   text-align: center;
   line-height: 35px;
 }
-.alertbox .form_code .get_captcha {
+.alertbox .form-code .get-captcha {
   width: 140px;
   height: 100%;
   border: 1px solid #dfdfdf;
@@ -195,7 +198,7 @@ body {
   color: #fff;
   cursor: pointer;
 }
-.alertbox .form_code .on {
+.alertbox .form-code .on {
   color: #f12c3e;
   background: #fff;
   border-color: #f12c3e;
@@ -854,80 +857,6 @@ body {
   bottom: 64px;
   left: 50%;
   margin-left: -159px;
-}
-.form {
-  height: 484px;
-  padding-top: 50px;
-}
-.form .form-c {
-  width: 1000px;
-  height: 424px;
-  background-color: #01b1e6;
-  border-radius: 10px;
-}
-.form .form-c .f-left {
-  width: 343px;
-  height: 332px;
-  margin: 47px 0 0 55px;
-  background: url(../../common/images/form.png);
-  background-size: 100% 100%;
-}
-.form .form-c .f-right {
-  width: 480px;
-  height: 400px;
-  padding-top: 25px;
-  margin-right: 62px;
-}
-.form .form-c .f-right h3 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #eff6f8;
-  text-align: center;
-}
-.form .form-c .f-right .f-c {
-  margin-top: 23px;
-  width: 440px;
-  height: 286px;
-  padding: 30px 0 0 40px;
-  background-color: #ffffff;
-}
-.form .form-c .f-right .f-c div {
-  margin-bottom: 10px;
-  height: 50px;
-  position: relative;
-}
-.form .form-c .f-right .f-c span {
-  font-size: 24px;
-  line-height: 50px;
-  color: #333333;
-}
-.form .form-c .f-right .f-c input {
-  position: absolute;
-  right: 30px;
-  top: 0;
-  width: 278px;
-  height: 50px;
-  line-height: 50px;
-  background-color: #ffffff;
-  border-radius: 26px;
-  border: solid 1px #e1e1e1;
-  text-indent: 20px;
-  padding: 0;
-  font-size: 16px;
-  color: #999999;
-}
-.form .form-c .f-right .f-c .form-btn {
-  width: 180px;
-  height: 50px;
-  background-color: #f22b43;
-  border-radius: 25px;
-  font-size: 22px;
-  line-height: 50px;
-  color: #ffff00;
-  text-align: center;
-  display: block;
-  letter-spacing: 6px;
-  margin: 20px 0 0 121px;
 }
 .footer {
   width: 100%;

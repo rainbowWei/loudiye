@@ -90,19 +90,21 @@
         }
         .wave-wrap{
             position: absolute;
-            left: .50rem;
-            bottom: .20rem;
-            width: .50rem;
-            height: .50rem;
+            top:50%;
+            left: 50%;
+            margin-left: -.5rem;
+            margin-top: -.5rem;
+            width: 1rem;
+            height: 1rem;
             background: url(../../common/images/btn_play.png);
             background-size: 100% 100%;
             z-index: 4;
             .circle1,.circle2,.circle3{
                 position: absolute;
                 z-index: 3;
-                width: .4rem;
-                height: .4rem;
-                border:.04rem solid #fff;
+                width: .9rem;
+                height: .9rem;
+                border:.05rem solid #fff;
                 border-radius: 50%;
                 animation: warn 3s ease-out;
                 animation-iteration-count: infinite;
@@ -130,7 +132,7 @@
                 color: #ef8200;
             }
         }
-        .from{
+        .form{
             width: 5rem;
             height: 100%;
             margin-left: .5rem;
@@ -154,7 +156,7 @@
                 margin-top: .15rem;
                 text-indent: .2rem;
             }
-            .from-btn{
+            .form-btn{
                 width: 100%;
                 height: .7rem;
                 text-align: center;
@@ -906,80 +908,6 @@
                 text-align: center;
                 display: block;
                 position: absolute;
-            }
-        }
-    }
-    //表单
-    .form{
-        height: 2.77rem;
-        padding-top: .23rem;
-        .form-c{
-            width: 6rem;
-            height: 2.48rem;
-            border-radius: .07rem;
-            background-color: #01b1e6;
-            .f-left{
-                width: 2.07rem;
-                height: 2.00rem;
-                margin: .29rem 0 0 .32rem;
-                background: url(../../common/images/form.png);
-                background-size: 100% 100%;
-            }
-            .f-right{
-                width: 2.88rem;
-                height: 2.33rem;;
-                padding-top:.15rem;
-                margin-right: .38rem;
-                h3{
-                    font-size: .18rem;
-                    line-height: .18rem;
-                    color: #eff6f8;
-                    text-align: center;
-                }
-                .f-c{
-                    margin-top: .10rem;
-                    width: 2.69rem;
-                    height: 1.75rem;
-                    padding: .19rem 0 0 .19rem;
-                    background-color: #ffffff;
-                    div{
-                        margin-bottom: .1rem;
-                        height: .31rem;
-                        position: relative;
-                    }
-                    span{
-                        font-size: .16rem;
-                        line-height: .32rem;
-                        color: #333333;
-                    }
-                    input{
-                        position: absolute;
-                        top:0;
-                        right: .2rem;
-                        width: 1.69rem;
-                        height: .31rem;
-                        line-height: .31rem;
-                        border-radius: .15rem;
-                        text-indent: .12rem;
-                        font-size: .12rem;
-                        background-color: #ffffff;
-                        border: solid 1px #e1e1e1;
-                        color: #999999;
-                    }
-                    .form-btn{
-                        width: 1.09rem;
-	                    height: .31rem;
-                        border-radius: .15rem;
-                        font-size: .14rem;
-                        line-height: .31rem;
-                        letter-spacing: .06rem;
-                        margin: .17rem 0 0 .78rem;
-                        background-color: #f22b43;
-                        color: #ffff00;
-                        text-align: center;
-                        display: block;
-                    }
-                }
             }
         }
     }

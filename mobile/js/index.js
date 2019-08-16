@@ -2,8 +2,8 @@ $(function(){
 
 
   //获得焦点清除错误提示语
-$( '.from .phone,.from .text,.from .name' ).focus( function(){
-  $(".from .error").text("");
+$( '.form .phone,.form .text,.form .name' ).focus( function(){
+  $(".form .error").text("");
 })
 
 //弹窗的隐藏
@@ -21,11 +21,11 @@ function cancel(alertBox,shelter) {
 }
 
 
-  $("#from-btn").click(function(){
-    var Phone = $(".from .phone").val();
-    var Error = $(".from .error");
+  $("#form-btn").click(function(){
+    var Phone = $(".form .phone").val();
+    var Error = $(".form .error");
     var contac = /^1[345789]\d{9}$/g;
-    var count = 10;
+    var count = 60;
     if(Phone == ""){
       Error.text("手机号码不能为空")
     }else if(!contac.test(Phone)){
@@ -51,8 +51,8 @@ function cancel(alertBox,shelter) {
            
            //点击重新发送验证码
            $(".get-captcha").click(function(){
-             count = 10;  
-             var Phone = $(".from .phone").val();
+             count = 60;  
+             var Phone = $(".form .phone").val();
              $(".get-captcha").removeClass('on');
              $(".get-captcha").attr('disabled','disabled');  
              $(".get-captcha").html(count + "s后再次获取"); 
@@ -88,6 +88,8 @@ function cancel(alertBox,shelter) {
             if(msg == 1){
               $(".form-phone").css("display","none");
               $(".form-code").css("display","block");
+            }else{
+              Error.text("该手机号已领取！！");
             }
           }  
       });
@@ -97,9 +99,9 @@ function cancel(alertBox,shelter) {
 
 
   //点击立即领取
-  $("#from-btn2").click(function(){
+  $("#form-btn2").click(function(){
 
-    var Phone = $(".from .phone").val();
+    var Phone = $(".form .phone").val();
     var Code = $(".form-code .text").val();
     var Name = $(".form-name .name").val();
 
@@ -114,7 +116,8 @@ function cancel(alertBox,shelter) {
         url: 'http://t.xingxiwang.com/checkcode', //目标地址 
         data:{
           phone:Phone,
-          code:Code
+          code:Code,
+          name:Name
         },  
         success: function (msg){
           if(msg == 1){

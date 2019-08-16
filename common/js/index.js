@@ -38,34 +38,4 @@ $(function(){
        //将当前窗口的内容区滚动高度改为0，即顶部
        $("html,body").animate({scrollTop:0},"fast");
    });
-
-
-   //提交数据
-
-   //免费解答
-   $("#submit").on("click",function(){
-    var Iphone = $('#iphone').val();
-    var re = /^1[345789]\d{9}$/g;
-
-      if((Iphone == "")){
-            alert("电话号码不能为空！！");
-            return false;
-        }else if((!re.exec(Iphone))){
-            alert("电话号码输入有误！！");
-            return false;
-        }else{
-            alert("提交成功");
-        }
-    
-        // $.ajax({
-        //         url:'',
-        //         data:{},
-        //         dataType:'html',
-        //         type:'post',
-        //         success:function(mydata){
-        //             alert("提交成功");
-        //             $('#iphone').val("");         
-        //         }
-        //     })
-    })
 })
